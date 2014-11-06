@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('EmailApp', ['ngRoute'])
-  .config(function ( $routeProvider ) {
+angular.module('GMApp', ['ngRoute'])
+  .config(function ($routeProvider) {
 
   $routeProvider
     .when('/inbox', {
