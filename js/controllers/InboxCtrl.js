@@ -5,6 +5,8 @@ angular.module('GMApp')
 		function InboxCtrl($scope, InboxFactory) {
 		$scope.meta = {title:"My Inbox"};
 
+		this.title = "My Inbox";
+
 		InboxFactory.getMessages()
 			.success(function(jsonData, statusCode){
 				console.log('The request was successful!', statusCode);

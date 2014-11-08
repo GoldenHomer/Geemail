@@ -14,6 +14,17 @@ body {
   width: 96%;
 }
 
+@media screen and (max-width: 640px) {
+  .header::before {
+    display: none;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .header::before {
   content: '';
   width: 15px;
@@ -25,17 +36,6 @@ body {
   margin-left: 15px;
   position: absolute;
   top: 25px;
-}
-
-@media screen and (max-width: 640px) {
-  .header::before {
-    display: none;
-  }
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 .header {
